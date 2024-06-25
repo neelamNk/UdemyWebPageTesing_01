@@ -1,4 +1,4 @@
-package com.testcases.usdemy;
+package com.testcases.udemy;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,18 +8,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class LoginTest {
+import com.Base.Udemy.Base;
+
+public class LoginTest extends Base {
 
 
-WebDriver driver;
-@BeforeClass
-public void Browseropen() {
-driver = new ChromeDriver();
-driver.get("https://www.udemy.com/");
-driver.manage().window().maximize();
 
-}
-//@Test
+@Test
 public void  Login() {
 		
   	WebElement Loginlink = driver.findElement(By.xpath("//*[@id=\"udemy\"]/div[1]/div[1]/div[3]/div[7]"));
@@ -27,16 +22,6 @@ public void  Login() {
   WebElement google = driver.findElement(By.xpath("//*[@id=\"udemy\"]/div[1]/div[2]/div/main/div/div/button"));
   google.click();
 	}
-@Test
-public void  Searchbox() {
-	WebElement Search = driver.findElement(By.name("q"));
-	
-	Search	.sendKeys("manual testing");
-	Search.submit();
-}
-@Test
-public void filterCategory() {
-	driver.findElement(By.xpath("//*[@id=\"main-content-anchor\"]/div/div/div[1]/div/div/div/div/div")).click();
-	
-}
+
+
 }
