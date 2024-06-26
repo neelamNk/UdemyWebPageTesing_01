@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.testcases.udemy.Sign_upTest">
+        <methods>
+          <include name="sigupButton"/>
+          <include name="Browseropen"/>
+        </methods>
+      </class> <!-- com.testcases.udemy.Sign_upTest -->
       <class name="com.testcases.udemy.filterCategory">
         <methods>
           <include name="filterCategoryCourse"/>
@@ -21,12 +27,6 @@
           <include name="Browseropen"/>
         </methods>
       </class> <!-- com.testcases.udemy.LoginTest -->
-      <class name="com.testcases.udemy.Sign_upTest">
-        <methods>
-          <include name="sigupButton"/>
-          <include name="Browseropen"/>
-        </methods>
-      </class> <!-- com.testcases.udemy.Sign_upTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.testcases.udemy.Addtocart"/>
+      <class name="com.testcases.udemy.Sign_upTest"/>
+      <class name="com.testcases.udemy.LoginTest"/>
+      <class name="com.testcases.udemy.filterCategory"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

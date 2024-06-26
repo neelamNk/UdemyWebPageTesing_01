@@ -3,12 +3,30 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="com.testcases.udemy.filterCategory">
+        <methods>
+          <include name="filterCategoryCourse"/>
+          <include name="Browseropen"/>
+        </methods>
+      </class> <!-- com.testcases.udemy.filterCategory -->
       <class name="com.testcases.udemy.Addtocart">
         <methods>
           <include name="Searchbox"/>
           <include name="Browseropen"/>
         </methods>
       </class> <!-- com.testcases.udemy.Addtocart -->
+      <class name="com.testcases.udemy.LoginTest">
+        <methods>
+          <include name="Login"/>
+          <include name="Browseropen"/>
+        </methods>
+      </class> <!-- com.testcases.udemy.LoginTest -->
+      <class name="com.testcases.udemy.Sign_upTest">
+        <methods>
+          <include name="sigupButton"/>
+          <include name="Browseropen"/>
+        </methods>
+      </class> <!-- com.testcases.udemy.Sign_upTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
