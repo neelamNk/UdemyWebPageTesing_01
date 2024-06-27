@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.Base.Udemy.Base;
 
 public class Sign_upTest extends Base {
-@Test(priority = 1)
+@Test
 	public void  sigupButton() throws InterruptedException {
 		            // Click on the Sign Up button to navigate to the sign-up page
 		            WebElement signUpButton = driver.findElement(By.linkText("Sign up"));
