@@ -6,8 +6,8 @@
       <class name="com.testcases.udemy.filterCategorytest">
         <methods>
           <include name="filterCategoryCourse"/>
-          <include name="closebrowser"/>
-          <include name="Browseropen"/>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- com.testcases.udemy.filterCategorytest -->
     </classes>

@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.testcases.udemy.Addtocart"/>
       <class name="com.testcases.udemy.Sign_upTest"/>
       <class name="com.testcases.udemy.LoginTest"/>
-      <class name="com.testcases.udemy.filterCategory"/>
+      <class name="com.testcases.udemy.filterCategorytest"/>
+      <class name="com.testcases.udemy.Addtocarttest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

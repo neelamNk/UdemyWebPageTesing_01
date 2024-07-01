@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-27T12:54:32 IST" name="Default suite" finished-at="2024-06-27T12:54:36 IST" duration-ms="4685">
+  <suite started-at="2024-07-01T11:44:26 IST" name="Default suite" finished-at="2024-07-01T11:44:34 IST" duration-ms="7424">
     <groups>
     </groups>
-    <test started-at="2024-06-27T12:54:32 IST" name="Default test" finished-at="2024-06-27T12:54:36 IST" duration-ms="4685">
+    <test started-at="2024-07-01T11:44:26 IST" name="Default test" finished-at="2024-07-01T11:44:34 IST" duration-ms="7424">
       <class name="com.testcases.udemy.filterCategorytest">
-        <test-method is-config="true" signature="Browseropen()[pri:0, instance:com.testcases.udemy.filterCategorytest@4e08711f]" started-at="2024-06-27T12:54:32 IST" name="Browseropen" finished-at="2024-06-27T12:54:34 IST" duration-ms="2837" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.udemy.filterCategorytest@424e1977]" started-at="2024-07-01T11:44:26 IST" name="setup" finished-at="2024-07-01T11:44:30 IST" duration-ms="3292" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Browseropen -->
-        <test-method signature="filterCategoryCourse()[pri:0, instance:com.testcases.udemy.filterCategorytest@4e08711f]" started-at="2024-06-27T12:54:34 IST" name="filterCategoryCourse" finished-at="2024-06-27T12:54:36 IST" duration-ms="1663" status="FAIL">
+        </test-method> <!-- setup -->
+        <test-method signature="UrlLaunching()[pri:0, instance:com.testcases.udemy.filterCategorytest@424e1977]" started-at="2024-07-01T11:44:30 IST" name="UrlLaunching" finished-at="2024-07-01T11:44:32 IST" duration-ms="2907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UrlLaunching -->
+        <test-method signature="filterCategoryCourse()[pri:0, instance:com.testcases.udemy.filterCategorytest@424e1977]" started-at="2024-07-01T11:44:32 IST" name="filterCategoryCourse" finished-at="2024-07-01T11:44:34 IST" duration-ms="1179" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="blYgG5"]/div/label/input"}
-  (Session info: chrome=126.0.6478.127)
+              <![CDATA[Unable to locate element: //*[@id="blYgG5"]/div/label/input
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.12.1', revision: '8e34639b11'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2b87882c61c69bc15367a6945e3b0e59, findElement {using=xpath, value=//*[@id="blYgG5"]/div/label/input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\excel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50844}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50844/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b87882c61c69bc15367a6945e3b0e59]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5a06ef68-3e3e-4c53-a1e5-938f043b0559, findElement {using=xpath, value=//*[@id="blYgG5"]/div/label/input}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0.2, moz:accessibilityChecks: false, moz:buildID: 20240624183754, moz:debuggerAddress: 127.0.0.1:29618, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25444, moz:profile: C:\Users\excel\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:29618/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5a06ef68-3e3e-4c53-a1e5-938f043b0559]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="blYgG5"]/div/label/input"}
-  (Session info: chrome=126.0.6478.127)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id="blYgG5"]/div/label/input
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.12.1', revision: '8e34639b11'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2b87882c61c69bc15367a6945e3b0e59, findElement {using=xpath, value=//*[@id="blYgG5"]/div/label/input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\excel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50844}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50844/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b87882c61c69bc15367a6945e3b0e59
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5a06ef68-3e3e-4c53-a1e5-938f043b0559, findElement {using=xpath, value=//*[@id="blYgG5"]/div/label/input}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0.2, moz:accessibilityChecks: false, moz:buildID: 20240624183754, moz:debuggerAddress: 127.0.0.1:29618, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25444, moz:profile: C:\Users\excel\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:29618/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5a06ef68-3e3e-4c53-a1e5-938f043b0559
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -81,10 +83,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterCategoryCourse -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.testcases.udemy.filterCategorytest@4e08711f]" started-at="2024-06-27T12:54:36 IST" name="closebrowser" finished-at="2024-06-27T12:54:36 IST" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testcases.udemy.filterCategorytest@424e1977]" started-at="2024-07-01T11:44:34 IST" name="closeBrowser" finished-at="2024-07-01T11:44:34 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closebrowser -->
+        </test-method> <!-- closeBrowser -->
       </class> <!-- com.testcases.udemy.filterCategorytest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
