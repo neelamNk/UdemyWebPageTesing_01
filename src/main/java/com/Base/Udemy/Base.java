@@ -12,7 +12,7 @@ public class Base {
 public static	WebDriver driver;
 	@BeforeClass
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./driver/geckodriver.exe");
 
 	driver = new FirefoxDriver();
 	}

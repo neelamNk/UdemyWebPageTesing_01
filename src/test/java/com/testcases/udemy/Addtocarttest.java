@@ -19,7 +19,7 @@ import org.apache.commons.io.FileUtils;
 
 	    @Test
 	    public void Searchbox() throws InterruptedException, IOException {
-	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
 	        // Search for a course
 	        WebElement searchBox = driver.findElement(By.name("q"));
@@ -28,6 +28,8 @@ import org.apache.commons.io.FileUtils;
 
 	        // Wait for search results to load
 	        Thread.sleep(1000);
+	        
+	        
 
 	        // Take a screenshot
 	        TakesScreenshot tS = (TakesScreenshot) driver;
