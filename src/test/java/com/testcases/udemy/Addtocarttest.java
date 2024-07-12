@@ -20,21 +20,25 @@ import org.apache.commons.io.FileUtils;
 	    @Test
 	    public void Searchbox() throws InterruptedException, IOException {
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-
+	        Thread.sleep(3000);
 	        // Search for a course
 	        WebElement searchBox = driver.findElement(By.name("q"));
 	        searchBox.sendKeys("manual testing");
 	        searchBox.submit();
 
 	        // Wait for search results to load
-	        Thread.sleep(1000);
+	        try {
+	            Thread.sleep(10000); // Wait for 10 seconds to allow the security check to complete
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
 	        
 	        
 
 	        // Take a screenshot
 	        TakesScreenshot tS = (TakesScreenshot) driver;
 	        File srcFile = tS.getScreenshotAs(OutputType.FILE);
-	        File destFile = new File("./ClickCode/Course.png");
+	        File destFile = new File("./ClickCode/Error.png");
 	        FileUtils.copyFile(srcFile, destFile);
 
 	        // Click on the course image
@@ -82,6 +86,7 @@ import org.apache.commons.io.FileUtils;
 
 	        // Summary
 	        driver.findElement(By.xpath("//*[@id='udemy']/div[1]/div[2]/div/div/div/aside/div/div/div[2]/div[2]")).click();
+	        
 	    }
 	}
 
